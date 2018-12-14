@@ -13,6 +13,101 @@ use Doctrine\ORM\Mapping as ORM;
 class Expense
 {
     /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param string $title
+     */
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmount(): string
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $amount
+     */
+    public function setAmount(string $amount): void
+    {
+        $this->amount = $amount;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreatedAt(): \DateTime
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param \DateTime $createdAt
+     */
+    public function setCreatedAt(\DateTime $createdAt): void
+    {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return \Category
+     */
+    public function getCategory(): \Category
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param \Category $category
+     */
+    public function setCategory(\Category $category): void
+    {
+        $this->category = $category;
+    }
+
+    /**
+     * @return \Person
+     */
+    public function getPerson(): \Person
+    {
+        return $this->person;
+    }
+
+    /**
+     * @param \Person $person
+     */
+    public function setPerson(\Person $person): void
+    {
+        $this->person = $person;
+    }
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="bigint", nullable=false)

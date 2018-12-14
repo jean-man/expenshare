@@ -46,6 +46,86 @@ class Debt
     private $from;
 
     /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmount(): string
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $amount
+     */
+    public function setAmount(string $amount): void
+    {
+        $this->amount = $amount;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPaid(): bool
+    {
+        return $this->paid;
+    }
+
+    /**
+     * @param bool $paid
+     */
+    public function setPaid(bool $paid): void
+    {
+        $this->paid = $paid;
+    }
+
+    /**
+     * @return \Person
+     */
+    public function getFrom(): \Person
+    {
+        return $this->from;
+    }
+
+    /**
+     * @param \Person $from
+     */
+    public function setFrom(\Person $from): void
+    {
+        $this->from = $from;
+    }
+
+    /**
+     * @return \Person
+     */
+    public function getTo(): \Person
+    {
+        return $this->to;
+    }
+
+    /**
+     * @param \Person $to
+     */
+    public function setTo(\Person $to): void
+    {
+        $this->to = $to;
+    }
+
+    /**
      * @var \Person
      *
      * @ORM\ManyToOne(targetEntity="Person")

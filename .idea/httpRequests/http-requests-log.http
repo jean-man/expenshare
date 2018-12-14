@@ -1,0 +1,43 @@
+GET http://localhost:8888/expenshare/expenshare%20back/public/category
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-14T033735.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/category
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-14T033638.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/category
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-14T033150.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/category
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-14T033049.200.json
+
+###
+
+GET http://localhost:8889/htdocs/expenshare/public/category
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+###
+
