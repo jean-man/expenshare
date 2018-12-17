@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="person", indexes={@ORM\Index(name="fk_person_share_group_idx", columns={"share_group_id"})})
  * @ORM\Entity
  */
-class Person
+class Persons
 {
     /**
      * @return int
@@ -97,16 +97,6 @@ class Person
      * @ORM\Column(name="lastname", type="string", length=255, nullable=false)
      */
     private $lastname;
-
-    /**
-     * @var \ShareGroup
-     *
-     * @ORM\ManyToOne(targetEntity="ShareGroup")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="share_group_id", referencedColumnName="id")
-     * })
-     */
-    private $shareGroup;
 
 
 }

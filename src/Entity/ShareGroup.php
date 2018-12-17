@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Entity;
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -104,6 +104,7 @@ class ShareGroup
      * @ORM\Column(name="closed", type="boolean", nullable=false)
      */
     private $closed = '0';
+
 
 
 }

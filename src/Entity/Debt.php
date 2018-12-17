@@ -38,7 +38,7 @@ class Debt
     /**
      * @var \Person
      *
-     * @ORM\ManyToOne(targetEntity="Person")
+     * @ORM\ManyToOne(targetEntity="Persons")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="from_id", referencedColumnName="id")
      * })
@@ -128,7 +128,7 @@ class Debt
     /**
      * @var \Person
      *
-     * @ORM\ManyToOne(targetEntity="Person")
+     * @ORM\ManyToOne(targetEntity="Persons")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="to_id", referencedColumnName="id")
      * })
