@@ -54,6 +54,7 @@ class Expense
     public function setAmount(string $amount): self
     {
         $this->amount = $amount;
+        return $this;
     }
 
     /**
@@ -68,36 +69,37 @@ class Expense
     public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->createdAt = $createdAt;
+        return $this;
     }
 
     /**
-     * @return \Category
+     * @return Category
      */
-    public function getCategory(): \Category
+    public function getCategory(): Category
     {
         return $this->category;
     }
 
     /**
-     * @param \Category $category
+     * @param Category $category
      */
-    public function setCategory(\Category $category): void
+    public function setCategory(Category $category): void
     {
         $this->category = $category;
     }
 
     /**
-     * @return \Person
+     * @return Person
      */
-    public function getPerson(): \Person
+    public function getPerson(): Person
     {
         return $this->person;
     }
 
     /**
-     * @param \Person $person
+     * @param Person $person
      */
-    public function setPerson(\Person $person): void
+    public function setPerson(Person $person): void
     {
         $this->person = $person;
     }
@@ -132,7 +134,7 @@ class Expense
     private $createdAt;
 
     /**
-     * @var \Category
+     * @var Category
      *
      * @ORM\ManyToOne(targetEntity="Category")
      * @ORM\JoinColumns({
@@ -142,7 +144,7 @@ class Expense
     private $category;
 
     /**
-     * @var \Person
+     * @var Person
      *
      * @ORM\ManyToOne(targetEntity="Person", inversedBy="expenses")
      * @ORM\JoinColumns({

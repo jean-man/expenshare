@@ -1,3 +1,30 @@
+POST http://localhost:8888/expenshare/expenshare%20back/public/expense/
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-20T045526.500.html
+
+###
+
+POST http://localhost:8888/expenshare/expenshare%20back/public/expense/
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-20T044836.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/weekendalille
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-20T035653.200.json
+
+###
+
 POST http://localhost:8888/expenshare/expenshare%20back/public/sharegroup/
 Accept: application/json
 Cache-Control: no-cache
@@ -413,33 +440,6 @@ Cache-Control: no-cache
 x-Requested-With: XMLHttpRequest
 
 <> 2018-12-17T020240.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T020210.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T020126.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T015838.200.json
 
 ###
 

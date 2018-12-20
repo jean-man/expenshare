@@ -1,0 +1,34 @@
+[
+  {
+    "id": "3",
+    "firstname": "Julien",
+    "lastname": "Avrantar",
+    "expenses": [
+      {
+        "id": "5",
+        "title": "hotelgrandcanal",
+        "amount": "426.00",
+        "createdAt": "2018-06-18T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "firstname": "Natalie",
+    "lastname": "Plantel",
+    "expenses": []
+  },
+  {
+    "id": "9",
+    "firstname": "Adrien",
+    "lastname": "Francoeur",
+    "expenses": [
+      {
+        "id": "3",
+        "title": "taxiparis",
+        "amount": "20.00",
+        "createdAt": "2018-05-13T00:00:00+00:00"
+      }
+    ]
+  }
+]

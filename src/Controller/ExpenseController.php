@@ -4,8 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Expense;
 use App\Entity\Person;
+use App\Entity\Category;
 use App\Entity\ShareGroup;
-use Symfony\Bundle\FrameworkBundle\Tests\Fixtures\Validation\Category;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -50,7 +50,7 @@ class ExpenseController extends BaseController
         $em = $this->getDoctrine()->getManager();
 
 
-        $category = $em->getRepository(Category::class)->find($jsonData["category"]);
+        $category = $em->getRepository(Category::class)->find($jsonData["cat"]);
         $person = $em->getRepository(Person::class)->find($jsonData["person"]);
 
         $expense = new Expense();
@@ -73,7 +73,7 @@ class ExpenseController extends BaseController
 
         return $this->json($exp[0]);
 
-        return $this->json($expense);
+
 
 
     }
