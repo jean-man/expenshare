@@ -36,9 +36,9 @@ class Debt
     private $paid = '0';
 
     /**
-     * @var \Person
+     * @var Person
      *
-     * @ORM\ManyToOne(targetEntity="Persons")
+     * @ORM\ManyToOne(targetEntity="Person")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="from_id", referencedColumnName="id")
      * })
@@ -46,94 +46,67 @@ class Debt
     private $from;
 
     /**
-     * @return int
-     */
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId(int $id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return string
-     */
-    public function getAmount(): string
-    {
-        return $this->amount;
-    }
-
-    /**
-     * @param string $amount
-     */
-    public function setAmount(string $amount): void
-    {
-        $this->amount = $amount;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isPaid(): bool
-    {
-        return $this->paid;
-    }
-
-    /**
-     * @param bool $paid
-     */
-    public function setPaid(bool $paid): void
-    {
-        $this->paid = $paid;
-    }
-
-    /**
-     * @return \Person
-     */
-    public function getFrom(): \Person
-    {
-        return $this->from;
-    }
-
-    /**
-     * @param \Person $from
-     */
-    public function setFrom(\Person $from): void
-    {
-        $this->from = $from;
-    }
-
-    /**
-     * @return \Person
-     */
-    public function getTo(): \Person
-    {
-        return $this->to;
-    }
-
-    /**
-     * @param \Person $to
-     */
-    public function setTo(\Person $to): void
-    {
-        $this->to = $to;
-    }
-
-    /**
-     * @var \Person
+     * @var Person
      *
-     * @ORM\ManyToOne(targetEntity="Persons")
+     * @ORM\ManyToOne(targetEntity="Person")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="to_id", referencedColumnName="id")
      * })
      */
     private $to;
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getAmount()
+    {
+        return $this->amount;
+    }
+
+    public function setAmount($amount): self
+    {
+        $this->amount = $amount;
+
+        return $this;
+    }
+
+    public function getPaid(): ?bool
+    {
+        return $this->paid;
+    }
+
+    public function setPaid(bool $paid): self
+    {
+        $this->paid = $paid;
+
+        return $this;
+    }
+
+    public function getFrom(): ?Person
+    {
+        return $this->from;
+    }
+
+    public function setFrom(?Person $from): self
+    {
+        $this->from = $from;
+
+        return $this;
+    }
+
+    public function getTo(): ?Person
+    {
+        return $this->to;
+    }
+
+    public function setTo(?Person $to): self
+    {
+        $this->to = $to;
+
+        return $this;
+    }
 
 
 }

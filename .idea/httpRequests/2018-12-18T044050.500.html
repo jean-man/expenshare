@@ -212,17 +212,78 @@
                     <h3 class="trace-class">
                         <span class="text-muted">(1/1)</span>
                         <span class="exception_title"><abbr
-                                title="Symfony\Component\Debug\Exception\FatalErrorException">FatalErrorException</abbr></span>
+                                title="Symfony\Component\DependencyInjection\Exception\RuntimeException">RuntimeException</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">Compile Error: Cannot declare class
-                        App\Controller\CategoryController, because the name is already in use</p>
+                    <p class="break-long-words trace-message">Cannot autowire argument $shareGroup of &quot;App\Controller\PersonController::index()&quot;:
+                        it references class &quot;App\Entity\ShareGroup&quot; but no such service exists.</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/dependency-injection/Container.php line 427"><strong>Container.php</strong> line 427</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\DependencyInjection\Container">Container</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getService</span>(<span
+                        class="trace-arguments">'privates', '.errored..service_locator.2IThTw..App\\Entity\\ShareGroup', <em>null</em>, 'Cannot autowire service &quot;.service_locator.2IThTw.&quot;: it references class &quot;App\\Entity\\ShareGroup&quot; but no such service exists.'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/dependency-injection/Argument/ServiceLocator.php line 38"><strong>ServiceLocator.php</strong> line 38</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\DependencyInjection\Argument\ServiceLocator">ServiceLocator</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">get</span>(<span class="trace-arguments">'shareGroup'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Controller/ArgumentResolver/ServiceValueResolver.php line 77"><strong>ServiceValueResolver.php</strong> line 77</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">ServiceValueResolver</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">resolve</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), <em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata">ArgumentMetadata</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Controller/ArgumentResolver.php line 62"><strong>ArgumentResolver.php</strong> line 62</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\Controller\ArgumentResolver">ArgumentResolver</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getArguments</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), <em>array</em>(<em>object</em>(<abbr
+                        title="App\Controller\PersonController">PersonController</abbr>), 'index')</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 142"><strong>HttpKernel.php</strong> line 142</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
                 </td>
             </tr>
             </tbody>

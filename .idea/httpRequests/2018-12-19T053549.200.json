@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "firstname": "Maurine",
+    "lastname": "Vargas",
+    "expenses": [
+      {
+        "id": "1",
+        "title": "restaudunord",
+        "amount": "376.00",
+        "createdAt": "2018-06-18T00:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "firstname": "Natanael",
+    "lastname": "Dupont",
+    "expenses": []
+  },
+  {
+    "id": "7",
+    "firstname": "Hervé",
+    "lastname": "Ladeignant",
+    "expenses": [
+      {
+        "id": "2",
+        "title": "volmunich",
+        "amount": "526.00",
+        "createdAt": "2018-05-13T00:00:00+00:00"
+      }
+    ]
+  }
+]

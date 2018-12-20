@@ -1,3 +1,286 @@
+POST http://localhost:8888/expenshare/expenshare%20back/public/sharegroup/
+Accept: application/json
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+{"slug": "test"}
+
+<> 2018-12-20T085559.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-19T053549.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-19T043216.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T035204.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-19T033928.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-19T111950.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044550.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044346.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044323.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044221.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044050.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T044032.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T043932.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T043853.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/sharegroup/weekendalille
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T034917.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/shareGroup/weekendalille
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T034733.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/shareGroup/weekendalille
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T034657.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T034526.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/person/group/anniversairejulien
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T034416.404.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T101210.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T100131.200.json
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T100014.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T095437.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-18T090325.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-17T072553.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-17T064730.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-17T044258.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-17T044038.500.html
+
+###
+
+GET http://localhost:8888/expenshare/expenshare%20back/public/expense
+Accept: */*
+Cache-Control: no-cache
+x-Requested-With: XMLHttpRequest
+
+<> 2018-12-17T043246.500.html
+
+###
+
 GET http://localhost:8888/expenshare/expenshare%20back/public/persons
 Accept: */*
 Cache-Control: no-cache
@@ -157,198 +440,6 @@ Cache-Control: no-cache
 x-Requested-With: XMLHttpRequest
 
 <> 2018-12-17T015838.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T015823.200.json
-
-###
-
-GET localhost:8888/expenshare/expenshare%20back/public/person/http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T015029.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T014837.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T014827.404.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T014748.404.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T014305.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T014023.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T013929.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T013714.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T011952.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T011829.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T010735.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T125504.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T125110.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-17T114417.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/person
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/category
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-14T033735.200.json
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/category
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-14T033638.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/category
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-14T033150.500.html
-
-###
-
-GET http://localhost:8888/expenshare/expenshare%20back/public/category
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
-
-<> 2018-12-14T033049.200.json
-
-###
-
-GET http://localhost:8889/htdocs/expenshare/public/category
-Accept: */*
-Cache-Control: no-cache
-x-Requested-With: XMLHttpRequest
 
 ###
 

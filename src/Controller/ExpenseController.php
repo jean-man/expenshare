@@ -3,31 +3,37 @@
 namespace App\Controller;
 
 use App\Entity\Expense;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\ShareGroup;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
 
-class ExpenseController extends AbstractController
+
+/**
+ * Class ExpenseController
+ * @package App\Controller
+ * @Route("/expense")
+ */
+
+class ExpenseController extends BaseController
 {
     /**
-     * Class ExpenseController
-     * @package App\Controller
-     * @Route("/expense")
+     * @Route("/group/{slug}", name="expense", methods="GET")
      */
 
-    // Request est un objet qui indique que la fonction doit faire un request
-
-    public function showExpense(Request $request) :Response
+    public function showExpense (ShareGroup $shareGroup)
     {
         $expenses = $this->getDoctrine()->getRepository(Expense::class)
 
-            ->createQueryBuilder('c')
+            ->createQueryBuilder('e')
+            ->select('e', 'ep', 'ec')
+            ->innerjoin('e.person', 'ep')
+            ->innerjoin('e.category', 'ec')
+            ->where('ep.shareGroup = :group')
+            ->setParameter(':group', $shareGroup)
             ->getQuery()
             ->getArrayResult();
 
-        if ($request->isXmlHttpRequest()) {
+
             return $this->json($expenses);
-        }
+
     }
 }

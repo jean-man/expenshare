@@ -210,19 +210,264 @@
             <tr>
                 <th>
                     <h3 class="trace-class">
-                        <span class="text-muted">(1/1)</span>
+                        <span class="text-muted">(2/2)</span>
                         <span class="exception_title"><abbr
-                                title="Symfony\Component\Debug\Exception\FatalErrorException">FatalErrorException</abbr></span>
+                                title="Doctrine\ORM\Query\QueryException">QueryException</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">Compile Error: Cannot declare class
-                        App\Controller\CategoryController, because the name is already in use</p>
+                    <p class="break-long-words trace-message">[Semantical Error] line 0, col 69 near 'shareGroup= ':
+                        Error: Class App\Entity\Persons has no field or association named shareGroup</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 34"><strong>PersonController.php</strong> line 34</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/QueryException.php line 65"><strong>QueryException.php</strong> line 65</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\Query\QueryException">QueryException</abbr></span><span class="trace-type">::</span><span
+                        class="trace-method">semanticalError</span>(<span class="trace-arguments">'line 0, col 69 near \'shareGroup= \': Error: Class App\\Entity\\Persons has no field or association named shareGroup', <em>object</em>(<abbr
+                        title="Doctrine\ORM\Query\QueryException">QueryException</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 491"><strong>Parser.php</strong> line 491</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">semanticalError</span>(<span
+                        class="trace-arguments">'line 0, col 69 near \'shareGroup= \': Error: Class App\\Entity\\Persons has no field or association named shareGroup', <em>array</em>('value' => 'shareGroup', 'type' => 102, 'position' => 69)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 764"><strong>Parser.php</strong> line 764</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span
+                        class="trace-method">processDeferredPathExpressions</span>(<span class="trace-arguments"></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 271"><strong>Parser.php</strong> line 271</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getAST</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 359"><strong>Parser.php</strong> line 359</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 283"><strong>Query.php</strong> line 283</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 295"><strong>Query.php</strong> line 295</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_doExecute</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 967"><strong>AbstractQuery.php</strong> line 967</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">executeIgnoreQueryCache</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 922"><strong>AbstractQuery.php</strong> line 922</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">execute</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 738"><strong>AbstractQuery.php</strong> line 738</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getArrayResult</span>(<span class="trace-arguments"></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="App\Controller\PersonController">PersonController</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">index</span>(<span class="trace-arguments"><em>object</em>(<abbr
+                        title="App\Entity\ShareGroup">ShareGroup</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 150"><strong>HttpKernel.php</strong> line 150</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="trace trace-as-html">
+        <table class="trace-details">
+            <thead class="trace-head">
+            <tr>
+                <th>
+                    <h3 class="trace-class">
+                        <span class="text-muted">(1/2)</span>
+                        <span class="exception_title"><abbr
+                                title="Doctrine\ORM\Query\QueryException">QueryException</abbr></span>
+                    </h3>
+                    <p class="break-long-words trace-message">SELECT p, e FROM App\Entity\Persons p LEFT JOIN p.expenses
+                        e WHERE p.shareGroup= :group</p>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/QueryException.php line 43"><strong>QueryException.php</strong> line 43</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\Query\QueryException">QueryException</abbr></span><span class="trace-type">::</span><span
+                        class="trace-method">dqlError</span>(<span class="trace-arguments">'SELECT p, e FROM App\\Entity\\Persons p LEFT JOIN p.expenses e WHERE p.shareGroup= :group'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 491"><strong>Parser.php</strong> line 491</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">semanticalError</span>(<span
+                        class="trace-arguments">'line 0, col 69 near \'shareGroup= \': Error: Class App\\Entity\\Persons has no field or association named shareGroup', <em>array</em>('value' => 'shareGroup', 'type' => 102, 'position' => 69)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 764"><strong>Parser.php</strong> line 764</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span
+                        class="trace-method">processDeferredPathExpressions</span>(<span class="trace-arguments"></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 271"><strong>Parser.php</strong> line 271</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getAST</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 359"><strong>Parser.php</strong> line 359</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 283"><strong>Query.php</strong> line 283</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 295"><strong>Query.php</strong> line 295</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_doExecute</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 967"><strong>AbstractQuery.php</strong> line 967</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">executeIgnoreQueryCache</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 922"><strong>AbstractQuery.php</strong> line 922</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">execute</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 738"><strong>AbstractQuery.php</strong> line 738</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getArrayResult</span>(<span class="trace-arguments"></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="App\Controller\PersonController">PersonController</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">index</span>(<span class="trace-arguments"><em>object</em>(<abbr
+                        title="App\Entity\ShareGroup">ShareGroup</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 150"><strong>HttpKernel.php</strong> line 150</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
                 </td>
             </tr>
             </tbody>

@@ -211,18 +211,264 @@
                 <th>
                     <h3 class="trace-class">
                         <span class="text-muted">(1/1)</span>
-                        <span class="exception_title"><abbr
-                                title="Symfony\Component\Debug\Exception\FatalErrorException">FatalErrorException</abbr></span>
+                        <span class="exception_title"><abbr title="Doctrine\Common\Annotations\AnnotationException">AnnotationException</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">Compile Error: Cannot declare class
-                        App\Controller\CategoryController, because the name is already in use</p>
+                    <p class="break-long-words trace-message">[Semantical Error] The annotation &quot;@Doctrine\ORM\Mapping&quot;
+                        in property App\Entity\Persons::$expenses does not exist, or could not be auto-loaded.</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php line 54"><strong>AnnotationException.php</strong> line 54</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\Common\Annotations\AnnotationException">AnnotationException</abbr></span><span
+                        class="trace-type">::</span><span class="trace-method">semanticalError</span>(<span
+                        class="trace-arguments">'The annotation &quot;@Doctrine\\ORM\\Mapping&quot; in property App\\Entity\\Persons::$expenses does not exist, or could not be auto-loaded.'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php line 734"><strong>DocParser.php</strong> line 734</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Annotations\DocParser">DocParser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">Annotation</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php line 663"><strong>DocParser.php</strong> line 663</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Annotations\DocParser">DocParser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">Annotations</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php line 354"><strong>DocParser.php</strong> line 354</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Annotations\DocParser">DocParser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">parse</span>(<span
+                        class="trace-arguments">'/**     * @var Collection     * @ORM \\OneToMany(targetEntity=&quot;Expense&quot;, mappedBy=&quot;person&quot;)     */', 'property App\\Entity\\Persons::$expenses'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationReader.php line 254"><strong>AnnotationReader.php</strong> line 254</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\Common\Annotations\AnnotationReader">AnnotationReader</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getPropertyAnnotations</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="ReflectionProperty">ReflectionProperty</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php line 113"><strong>CachedReader.php</strong> line 113</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Annotations\CachedReader">CachedReader</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getPropertyAnnotations</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="ReflectionProperty">ReflectionProperty</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php line 125"><strong>CachedReader.php</strong> line 125</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Annotations\CachedReader">CachedReader</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getPropertyAnnotation</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="ReflectionProperty">ReflectionProperty</abbr>), 'Doctrine\\ORM\\Mapping\\Cache'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php line 292"><strong>AnnotationDriver.php</strong> line 292</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Mapping\Driver\AnnotationDriver">AnnotationDriver</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadataForClass</span>(<span
+                        class="trace-arguments">'App\\Entity\\Persons', <em>object</em>(<abbr
+                        title="Doctrine\ORM\Mapping\ClassMetadata">ClassMetadata</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/MappingDriverChain.php line 77"><strong>MappingDriverChain.php</strong> line 77</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain">MappingDriverChain</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadataForClass</span>(<span
+                        class="trace-arguments">'App\\Entity\\Persons', <em>object</em>(<abbr
+                        title="Doctrine\ORM\Mapping\ClassMetadata">ClassMetadata</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php line 151"><strong>ClassMetadataFactory.php</strong> line 151</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Mapping\ClassMetadataFactory">ClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">doLoadMetadata</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Doctrine\ORM\Mapping\ClassMetadata">ClassMetadata</abbr>), <em>null</em>, <em>false</em>, <em>array</em>()</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php line 305"><strong>AbstractClassMetadataFactory.php</strong> line 305</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory">AbstractClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadata</span>(<span
+                        class="trace-arguments">'App\\Entity\\Persons'</span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php line 78"><strong>ClassMetadataFactory.php</strong> line 78</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Mapping\ClassMetadataFactory">ClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadata</span>(<span
+                        class="trace-arguments">'App\\Entity\\Persons'</span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php line 183"><strong>AbstractClassMetadataFactory.php</strong> line 183</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory">AbstractClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getMetadataFor</span>(<span
+                        class="trace-arguments">'App\\Entity\\Persons'</span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php line 283"><strong>EntityManager.php</strong> line 283</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\EntityManager">EntityManager</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getClassMetadata</span>(<span class="trace-arguments">'App\\Entity\\Persons'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 1779"><strong>Parser.php</strong> line 1779</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">JoinAssociationDeclaration</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 1700"><strong>Parser.php</strong> line 1700</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">Join</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 1596"><strong>Parser.php</strong> line 1596</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">IdentificationVariableDeclaration</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 1319"><strong>Parser.php</strong> line 1319</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">FromClause</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 878"><strong>Parser.php</strong> line 878</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">SelectStatement</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 847"><strong>Parser.php</strong> line 847</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">QueryLanguage</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 260"><strong>Parser.php</strong> line 260</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getAST</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Parser.php line 359"><strong>Parser.php</strong> line 359</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query\Parser">Parser</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 283"><strong>Query.php</strong> line 283</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_parse</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Query.php line 295"><strong>Query.php</strong> line 295</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Query">Query</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">_doExecute</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 967"><strong>AbstractQuery.php</strong> line 967</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">executeIgnoreQueryCache</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 922"><strong>AbstractQuery.php</strong> line 922</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">execute</span>(<span class="trace-arguments"><em>null</em>, 2</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php line 738"><strong>AbstractQuery.php</strong> line 738</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\AbstractQuery">AbstractQuery</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getArrayResult</span>(<span class="trace-arguments"></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/ExpenseController.php line 35"><strong>ExpenseController.php</strong> line 35</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="App\Controller\ExpenseController">ExpenseController</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">showExpense</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 150"><strong>HttpKernel.php</strong> line 150</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
                 </td>
             </tr>
             </tbody>

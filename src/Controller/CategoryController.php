@@ -9,6 +9,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
+
+/**
+ * Class CategoryController
+ * @package App\Controller
+ * @Route("/category", name="category")
+ */
+
 class CategoryController extends AbstractController
 {
     /**

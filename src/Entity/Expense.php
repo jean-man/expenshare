@@ -36,26 +36,22 @@ class Expense
         return $this->title;
     }
 
-    /**
-     * @param string $title
-     */
-    public function setTitle(string $title): void
+    public function setTitle(string $title): self
     {
         $this->title = $title;
+        return $this;
     }
 
     /**
      * @return string
      */
-    public function getAmount(): string
+    public function getAmount()
     {
         return $this->amount;
     }
 
-    /**
-     * @param string $amount
-     */
-    public function setAmount(string $amount): void
+
+    public function setAmount(string $amount): self
     {
         $this->amount = $amount;
     }
@@ -63,15 +59,13 @@ class Expense
     /**
      * @return \DateTime
      */
-    public function getCreatedAt(): \DateTime
+    public function getCreatedAt(): \DateTimeInterface
     {
         return $this->createdAt;
     }
 
-    /**
-     * @param \DateTime $createdAt
-     */
-    public function setCreatedAt(\DateTime $createdAt): void
+
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->createdAt = $createdAt;
     }
@@ -150,7 +144,7 @@ class Expense
     /**
      * @var \Person
      *
-     * @ORM\ManyToOne(targetEntity="Persons")
+     * @ORM\ManyToOne(targetEntity="Person", inversedBy="expenses")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="person_id", referencedColumnName="id")
      * })

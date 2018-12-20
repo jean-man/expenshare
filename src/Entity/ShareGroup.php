@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Entity;
-use Doctrine\Common\Collections\ArrayCollection;
+
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -12,69 +13,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class ShareGroup
 {
-    /**
-     * @return int
-     */
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId(int $id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSlug(): string
-    {
-        return $this->slug;
-    }
-
-    /**
-     * @param string $slug
-     */
-    public function setSlug(string $slug): void
-    {
-        $this->slug = $slug;
-    }
-
-    /**
-     * @return \DateTime
-     */
-    public function getCreatedAt(): \DateTime
-    {
-        return $this->createdAt;
-    }
-
-    /**
-     * @param \DateTime $createdAt
-     */
-    public function setCreatedAt(\DateTime $createdAt): void
-    {
-        $this->createdAt = $createdAt;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isClosed(): bool
-    {
-        return $this->closed;
-    }
-
-    /**
-     * @param bool $closed
-     */
-    public function setClosed(bool $closed): void
-    {
-        $this->closed = $closed;
-    }
     /**
      * @var int
      *
@@ -105,6 +43,52 @@ class ShareGroup
      */
     private $closed = '0';
 
+    /**
+     * @var Collection
+     * @ORM\OneToMany(targetEntity="Person", mappedBy="shareGroup")
+     */
+    private $person;
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getClosed(): ?bool
+    {
+        return $this->closed;
+    }
+
+    public function setClosed(bool $closed): self
+    {
+        $this->closed = $closed;
+
+        return $this;
+    }
 
 
 }

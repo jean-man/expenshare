@@ -211,18 +211,119 @@
                 <th>
                     <h3 class="trace-class">
                         <span class="text-muted">(1/1)</span>
-                        <span class="exception_title"><abbr
-                                title="Symfony\Component\Debug\Exception\FatalErrorException">FatalErrorException</abbr></span>
+                        <span class="exception_title"><abbr title="TypeError">TypeError</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">Compile Error: Cannot declare class
-                        App\Controller\CategoryController, because the name is already in use</p>
+                    <p class="break-long-words trace-message">Return value of App\Entity\ShareGroup::getPerson() must be
+                        an instance of Doctrine\Common\Collections\Collection, null returned</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                <td><span class="block trace-file-path">in <a href=""
+                                                              title="Go to source"><strong>ShareGroup.php</string> line 57</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="App\Entity\ShareGroup">ShareGroup</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getPerson</span>(<span
+                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a href=""
+                                                                                                  title="Go to source"><strong>PropertyAccessor.php</string>
+                    line 372</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\PropertyAccess\PropertyAccessor">PropertyAccessor</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">readProperty</span>(<span
+                        class="trace-arguments"><em>array</em>(<em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>)), 'person'</span>)<span
+                        class="block trace-file-path">in <a href=""
+                                                            title="Go to source"><strong>PropertyAccessor.php</string>
+                    line 295</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\PropertyAccess\PropertyAccessor">PropertyAccessor</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">readPropertiesUntil</span>(<span
+                        class="trace-arguments"><em>array</em>(<em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>)), <em>object</em>(<abbr
+                        title="Symfony\Component\PropertyAccess\PropertyPath">PropertyPath</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a href=""
+                                                            title="Go to source"><strong>PropertyAccessor.php</string>
+                    line 90</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\PropertyAccess\PropertyAccessor">PropertyAccessor</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getValue</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>), <em>object</em>(<abbr
+                        title="Symfony\Component\PropertyAccess\PropertyPath">PropertyPath</abbr>)</span>)<span
+                        class="block trace-file-path">in <a href=""
+                                                            title="Go to source"><strong>ObjectNormalizer.php</string>
+                    line 124</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\Serializer\Normalizer\ObjectNormalizer">ObjectNormalizer</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getAttributeValue</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>), 'person', 'json', <em>array</em>('json_encode_options' => 15, 'cache_key' => '0dfa50bb90336e36ab10b773c30f0263', 'circular_reference_limit_counters' => <em>array</em>('0000000051c00842000000005d0de611' => 1))</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>AbstractObjectNormalizer.php</string>
+                    line 107</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer">AbstractObjectNormalizer</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">normalize</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>), 'json', <em>array</em>('json_encode_options' => 15, 'cache_key' => '0dfa50bb90336e36ab10b773c30f0263', 'circular_reference_limit_counters' => <em>array</em>('0000000051c00842000000005d0de611' => 1))</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>Serializer.php</string>
+                    line 152</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\Serializer\Serializer">Serializer</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">normalize</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>), 'json', <em>array</em>('json_encode_options' => 15)</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>Serializer.php</string>
+                    line 125</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\Serializer\Serializer">Serializer</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">serialize</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="App\Entity\ShareGroup">ShareGroup</abbr>), 'json', <em>array</em>('json_encode_options' => 15)</span>)<span
+                        class="block trace-file-path">in <a href=""
+                                                            title="Go to source"><strong>ControllerTrait.php</string>
+                    line 127</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Bundle\FrameworkBundle\Controller\AbstractController">AbstractController</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">json</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="App\Entity\ShareGroup">ShareGroup</abbr>)</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>ShareGroupController.php</string>
+                    line 49</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="App\Controller\ShareGroupController">ShareGroupController</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">new</span>(<span class="trace-arguments"><em>object</em>(<abbr
+                        title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>HttpKernel.php</string>
+                    line 150</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>HttpKernel.php</string>
+                    line 67</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>Kernel.php</string>
+                    line 198</a></span></td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a href="" title="Go to source"><strong>index.php</string> line 25</a></span>
                 </td>
             </tr>
             </tbody>

@@ -211,94 +211,129 @@
                 <th>
                     <h3 class="trace-class">
                         <span class="text-muted">(1/1)</span>
-                        <span class="exception_title"><abbr title="ParseError">ParseError</abbr></span>
+                        <span class="exception_title"><abbr
+                                title="Doctrine\Common\Persistence\Mapping\MappingException">MappingException</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">syntax error, unexpected end of file, expecting function
-                        (T_FUNCTION) or const (T_CONST)</p>
+                    <p class="break-long-words trace-message">The class 'Symfony\Bridge\Doctrine\Tests\Fixtures\Person'
+                        was not found in the chain configured namespaces App\Entity</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/CategoryController.php line 24"><strong>CategoryController.php</strong> line 24</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php line 22"><strong>MappingException.php</strong> line 22</a></span>
                 </td>
             </tr>
             <tr>
-                <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\Debug\DebugClassLoader">DebugClassLoader</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">loadClass</span>(<span
-                        class="trace-arguments">'App\\Controller\\CategoryController'</span>)
-                </td>
-            </tr>
-            <tr>
-                <td>at <span class="trace-class"><abbr title=""></abbr></span><span class="trace-type"></span><span
-                        class="trace-method">spl_autoload_call</span>(<span class="trace-arguments">'App\\Controller\\CategoryController'</span>)
-                </td>
-            </tr>
-            <tr>
-                <td>at <span class="trace-class"><abbr title="ReflectionClass">ReflectionClass</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">__construct</span>(<span
-                        class="trace-arguments">'App\\Controller\\CategoryController'</span>)<span
+                <td>at <span class="trace-class"><abbr title="Doctrine\Common\Persistence\Mapping\MappingException">MappingException</abbr></span><span
+                        class="trace-type">::</span><span class="trace-method">classNotFoundInNamespaces</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person', <em>array</em>('App\\Entity')</span>)<span
                         class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/config/Resource/ReflectionClassResource.php line 104"><strong>ReflectionClassResource.php</strong> line 104</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/MappingDriverChain.php line 87"><strong>MappingDriverChain.php</strong> line 87</a></span>
                 </td>
             </tr>
             <tr>
                 <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\Config\Resource\ReflectionClassResource">ReflectionClassResource</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">computeHash</span>(<span
-                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/config/Resource/ReflectionClassResource.php line 49"><strong>ReflectionClassResource.php</strong> line 49</a></span>
+                        title="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain">MappingDriverChain</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadataForClass</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person', <em>object</em>(<abbr
+                        title="Doctrine\ORM\Mapping\ClassMetadata">ClassMetadata</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php line 151"><strong>ClassMetadataFactory.php</strong> line 151</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Mapping\ClassMetadataFactory">ClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">doLoadMetadata</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Doctrine\ORM\Mapping\ClassMetadata">ClassMetadata</abbr>), <em>null</em>, <em>false</em>, <em>array</em>()</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php line 305"><strong>AbstractClassMetadataFactory.php</strong> line 305</a></span>
                 </td>
             </tr>
             <tr>
                 <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\Config\Resource\ReflectionClassResource">ReflectionClassResource</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">isFresh</span>(<span
-                        class="trace-arguments">1544796907</span>)<span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php line 34"><strong>SelfCheckingResourceChecker.php</strong> line 34</a></span>
+                        title="Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory">AbstractClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadata</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php line 78"><strong>ClassMetadataFactory.php</strong> line 78</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\ORM\Mapping\ClassMetadataFactory">ClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">loadMetadata</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php line 183"><strong>AbstractClassMetadataFactory.php</strong> line 183</a></span>
                 </td>
             </tr>
             <tr>
                 <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\Config\Resource\SelfCheckingResourceChecker">SelfCheckingResourceChecker</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">isFresh</span>(<span
+                        title="Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory">AbstractClassMetadataFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getMetadataFor</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php line 283"><strong>EntityManager.php</strong> line 283</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\ORM\EntityManager">EntityManager</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getClassMetadata</span>(<span class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/doctrine-bundle/Repository/ContainerRepositoryFactory.php line 45"><strong>ContainerRepositoryFactory.php</strong> line 45</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">ContainerRepositoryFactory</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getRepository</span>(<span
                         class="trace-arguments"><em>object</em>(<abbr
-                        title="Symfony\Component\Config\Resource\ReflectionClassResource">ReflectionClassResource</abbr>), 1544796907</span>)<span
+                        title="Doctrine\ORM\EntityManager">EntityManager</abbr>), 'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
                         class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/config/ResourceCheckerConfigCache.php line 99"><strong>ResourceCheckerConfigCache.php</strong> line 99</a></span>
-                </td>
-            </tr>
-            <tr>
-                <td>at <span class="trace-class"><abbr title="Symfony\Component\Config\ResourceCheckerConfigCache">ResourceCheckerConfigCache</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">isFresh</span>(<span
-                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/config/ConfigCache.php line 60"><strong>ConfigCache.php</strong> line 60</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php line 713"><strong>EntityManager.php</strong> line 713</a></span>
                 </td>
             </tr>
             <tr>
                 <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\Config\ConfigCache">ConfigCache</abbr></span><span class="trace-type">-></span><span
-                        class="trace-method">isFresh</span>(<span class="trace-arguments"></span>)<span
+                        title="Doctrine\ORM\EntityManager">EntityManager</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">getRepository</span>(<span class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
                         class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 479"><strong>Kernel.php</strong> line 479</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/AbstractManagerRegistry.php line 213"><strong>AbstractManagerRegistry.php</strong> line 213</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Doctrine\Common\Persistence\AbstractManagerRegistry">AbstractManagerRegistry</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">getRepository</span>(<span
+                        class="trace-arguments">'Symfony\\Bridge\\Doctrine\\Tests\\Fixtures\\Person'</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 27"><strong>PersonController.php</strong> line 27</a></span>
                 </td>
             </tr>
             <tr>
                 <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">initializeContainer</span>(<span
-                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 133"><strong>Kernel.php</strong> line 133</a></span>
+                        title="App\Controller\PersonController">PersonController</abbr></span><span class="trace-type">-></span><span
+                        class="trace-method">index</span>(<span class="trace-arguments"><em>object</em>(<abbr
+                        title="App\Entity\ShareGroup">ShareGroup</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 150"><strong>HttpKernel.php</strong> line 150</a></span>
                 </td>
             </tr>
             <tr>
-                <td>at <span class="trace-class"><abbr
-                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
-                        class="trace-type">-></span><span class="trace-method">boot</span>(<span
-                        class="trace-arguments"></span>)<span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 193"><strong>Kernel.php</strong> line 193</a></span>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
                 </td>
             </tr>
             <tr>

@@ -191,7 +191,7 @@
 <div class="exception-summary">
     <div class="container">
         <div class="exception-message-wrapper">
-            <h1 class="break-long-words exception-message">Whoops, looks like something went wrong.</h1>
+            <h1 class="break-long-words exception-message">Sorry, the page you are looking for could not be found.</h1>
             <div class="exception-illustration hidden-xs-down">
                 <svg viewBox="0 0 136 81" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
                      stroke-linejoin="round" stroke-miterlimit="1.414">
@@ -210,19 +210,188 @@
             <tr>
                 <th>
                     <h3 class="trace-class">
-                        <span class="text-muted">(1/1)</span>
+                        <span class="text-muted">(2/2)</span>
                         <span class="exception_title"><abbr
-                                title="Symfony\Component\Debug\Exception\FatalErrorException">FatalErrorException</abbr></span>
+                                title="Symfony\Component\HttpKernel\Exception\NotFoundHttpException">NotFoundHttpException</abbr></span>
                     </h3>
-                    <p class="break-long-words trace-message">Compile Error: Cannot declare class
-                        App\Controller\CategoryController, because the name is already in use</p>
+                    <p class="break-long-words trace-message">No route found for &quot;GET /sharegroup/weekendalille&quot;</p>
                 </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td><span class="block trace-file-path">in <a
-                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/src/Controller/PersonController.php line 33"><strong>PersonController.php</strong> line 33</a></span>
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/EventListener/RouterListener.php line 139"><strong>RouterListener.php</strong> line 139</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">onKernelRequest</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/event-dispatcher/EventDispatcher.php line 212"><strong>EventDispatcher.php</strong> line 212</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">doDispatch</span>(<span
+                        class="trace-arguments"><em>array</em>(<em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\DebugHandlersListener">DebugHandlersListener</abbr>), 'configure'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\ValidateRequestListener">ValidateRequestListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Nelmio\CorsBundle\EventListener\CorsListener">CorsListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\SessionListener">SessionListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber">ResolveControllerNameSubscriber</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\LocaleListener">LocaleListener</abbr>), 'onKernelRequest')), 'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/event-dispatcher/EventDispatcher.php line 44"><strong>EventDispatcher.php</strong> line 44</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">dispatch</span>(<span
+                        class="trace-arguments">'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 126"><strong>HttpKernel.php</strong> line 126</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="trace trace-as-html">
+        <table class="trace-details">
+            <thead class="trace-head">
+            <tr>
+                <th>
+                    <h3 class="trace-class">
+                        <span class="text-muted">(1/2)</span>
+                        <span class="exception_title"><abbr
+                                title="Symfony\Component\Routing\Exception\ResourceNotFoundException">ResourceNotFoundException</abbr></span>
+                    </h3>
+                    <p class="break-long-words trace-message"></p>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/routing/Matcher/Dumper/PhpMatcherTrait.php line 67"><strong>PhpMatcherTrait.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="srcApp_KernelDevDebugContainerUrlMatcher">srcApp_KernelDevDebugContainerUrlMatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">match</span>(<span
+                        class="trace-arguments">'/sharegroup/weekendalille/'</span>)<span class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/routing/Matcher/UrlMatcher.php line 107"><strong>UrlMatcher.php</strong> line 107</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\Routing\Matcher\UrlMatcher">UrlMatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">matchRequest</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/routing/Router.php line 262"><strong>Router.php</strong> line 262</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\Routing\Router">Router</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">matchRequest</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/EventListener/RouterListener.php line 115"><strong>RouterListener.php</strong> line 115</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">onKernelRequest</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/event-dispatcher/EventDispatcher.php line 212"><strong>EventDispatcher.php</strong> line 212</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">doDispatch</span>(<span
+                        class="trace-arguments"><em>array</em>(<em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\DebugHandlersListener">DebugHandlersListener</abbr>), 'configure'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\ValidateRequestListener">ValidateRequestListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Nelmio\CorsBundle\EventListener\CorsListener">CorsListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\SessionListener">SessionListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber">ResolveControllerNameSubscriber</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\EventListener\LocaleListener">LocaleListener</abbr>), 'onKernelRequest')), 'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/event-dispatcher/EventDispatcher.php line 44"><strong>EventDispatcher.php</strong> line 44</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">dispatch</span>(<span
+                        class="trace-arguments">'kernel.request', <em>object</em>(<abbr
+                        title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 126"><strong>HttpKernel.php</strong> line 126</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handleRaw</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/HttpKernel.php line 67"><strong>HttpKernel.php</strong> line 67</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), 1, <em>true</em></span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/vendor/symfony/http-kernel/Kernel.php line 198"><strong>Kernel.php</strong> line 198</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td>at <span class="trace-class"><abbr
+                        title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></span><span
+                        class="trace-type">-></span><span class="trace-method">handle</span>(<span
+                        class="trace-arguments"><em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)</span>)<span
+                        class="block trace-file-path">in <a
+                        title="/Applications/MAMP/htdocs/expenshare/expenshare back/public/index.php line 25"><strong>index.php</strong> line 25</a></span>
                 </td>
             </tr>
             </tbody>
