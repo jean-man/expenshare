@@ -18,15 +18,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CategoryController extends AbstractController
 {
-    /**
-     * Class CategoryController
-     * @package App\Controller
-     * @Route("/category")
-     */
 
+    /**
+     * @Route("/", name="category", methods="GET")
+     */
     // Request est un objet qui indique que la fonction doit faire un request
 
-    public function showcCategory(Request $request): Response
+    public function showCategory(Request $request): Response
     {
         $categories = $this->getDoctrine()->getRepository(Category::class)
 
@@ -34,8 +32,8 @@ class CategoryController extends AbstractController
             ->getQuery()
             ->getArrayResult();
 
-        if ($request->isXmlHttpRequest()) {
+
             return $this->json($categories);
         }
-    }
+
 }
